@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDom from "react-dom/client";
+import {Profile} from "./profile";
+import Gallery from "./gallery";
+
+
 
 /* parte 1
 function App() {
@@ -8,7 +12,7 @@ function App() {
  */
 
 
-/* parte 2 */
+/* parte 2
 function Profile() {
     return (
         <img
@@ -16,9 +20,9 @@ function Profile() {
             alt="Katherine Jhonson"
         />
     );
-} 
+}  */
 
-export default function Gallery() {
+/* export default function Gallery() {
     return(
         <section>
             <h1>Personajes famosos</h1>
@@ -27,7 +31,15 @@ export default function Gallery() {
             <Profile />
         </section>
     )
+} */
+
+/* parte 3 */
+function App() {
+    return (
+        <Gallery />
+    );
 }
+
 
 
 const root = ReactDom.createRoot(
@@ -36,6 +48,6 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <Gallery />
+        <App />
     </React.StrictMode>
 )
