@@ -2,6 +2,7 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import {Profile} from "./profile";
 import Gallery from "./gallery";
+import TioSimon from "./tioSimon";
 
 
 
@@ -34,13 +35,36 @@ function Profile() {
 } */
 
 /* parte 3 */
-function App() {
+/* function App() {
     return (
         <Gallery />
     );
+} */
+
+/* parte 4 - agregar estilos */
+/* export default function TodoList() {
+    return(
+        <ul style={
+            {
+                backgroundColor:"black",
+                color:"white",
+            }
+        }>
+            <li>Ir a la playa</li>
+            <li>Ir al parque</li>
+            <li>Ir al cine</li>
+        </ul>
+    );
+} */
+
+/* parte 5 - Simon Diaz */
+export default function Artista() {
+    return(
+        <>
+            <TioSimon />
+        </>
+    )
 }
-
-
 
 const root = ReactDom.createRoot(
     document.getElementById("root")
@@ -48,6 +72,6 @@ const root = ReactDom.createRoot(
 
 root.render(
     <React.StrictMode>
-        <App />
+        <Artista />
     </React.StrictMode>
 )
